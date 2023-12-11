@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    color: #333;
+}
+
+/*  styles for other sections and project details here */
+
+/* animated background styles here */
+/*CSS for the fade-in animation */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*   these styles for the animations */
+@keyframes colorChange {
+    0% { color: #333; background-color: #fff; }
+    25% { color: #ff5733; background-color: #e6e6e6; }
+    50% { color: #67a9e7; background-color: #f2f2f2; }
+    75% { color: #c794d7; background-color: #d9d9d9; }
+    100% { color: #333; background-color: #fff; }
+}
+
+@keyframes textChange {
+    0%, 100% { content: "Hello, I'm Raj DK, a passionate and detail-oriented developer proficient in Java and Python."; }
+    25%, 75% { content: "Explore my projects and achievements to discover my technical expertise and commitment to excellence."; }
+    50% { content: "Let's embark on a journey of innovation and problem-solving together!"; }
+}
+
+section#about {
+    animation: colorChange 10s infinite, textChange 10s infinite;
+}
+
+/*   styles for the portfolio section */
+section#portfolio {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*   animations for keyword changes */
+@keyframes keywordChange {
+    0%, 100% { color: #333; font-weight: normal; }
+    25%, 75% { color: #ff5733; font-weight: bold; }
+    50% { color: #67a9e7; font-style: italic; }
+}
+
+.project-description .highlight-keyword {
+    animation: keywordChange 8s infinite;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChange {
+    0% { background-color: #f2f2f2; }
+    25% { background-color: #e6e6e6; }
+    50% { background-color: #d9d9d9; }
+    75% { background-color: #f2f2f2; }
+    100% { background-color: #f2f2f2; }
+}
+
+section#portfolio {
+    animation: backgroundChange 20s infinite;
+}
+/*   styles for the enhanced portfolio section */
+section#portfolio {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.project {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project:hover .project-description {
+    background-color: #f5f5f5;
+}
+
+/*   animations for keyword changes */
+@keyframes keywordChange {
+    0%, 100% { color: #333; font-weight: normal; }
+    25%, 75% { color: #ff5733; font-weight: bold; }
+    50% { color: #67a9e7; font-style: italic; }
+}
+
+.project-description .highlight-keyword {
+    animation: keywordChange 8s infinite;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChange {
+    0% { background-color: #f2f2f2; }
+    25% { background-color: #e6e6e6; }
+    50% { background-color: #d9d9d9; }
+    75% { background-color: #f2f2f2; }
+    100% { background-color: #f2f2f2; }
+}
+
+section#portfolio {
+    animation: backgroundChange 20s infinite;
+}
+/*   styles for the enhanced about me section */
+section#about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #67a9e7;
+    color: #fff;
+    overflow: hidden;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*   animations for keyword changes */
+@keyframes keywordChange {
+    0%, 100% { color: #fff; font-weight: normal; }
+    25%, 75% { color: #ffdb58; font-weight: bold; }
+    50% { color: #ff8c00; font-style: italic; }
+}
+
+#about .highlight-keyword {
+    animation: keywordChange 8s infinite;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChangeAbout {
+    0% { background-color: #67a9e7; }
+    25% { background-color: #5789c6; }
+    50% { background-color: #4d7aa4; }
+    75% { background-color: #67a9e7; }
+    100% { background-color: #67a9e7; }
+}
+
+section#about {
+    animation: backgroundChangeAbout 20s infinite;
+}
+
+/*   styles for the enhanced and animated about me section */
+section#about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #67a9e7;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popUpDown 2s ease-in-out infinite;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+
+/*   background color changes while scrolling */
+@keyframes backgroundChangeAbout {
+    0% { background-color: #528ad4; }
+    25% { background-color: #5789c6; }
+    50% { background-color: #4d7aa4; }
+    75% { background-color: #67a9e7; }
+    100% { background-color: #67a9e7; }
+}
+
+section#about {
+    animation: backgroundChangeAbout 5s infinite;
+}
+/*   styles for the enhanced contact section */
+section#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #4d7aa4;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popUpDown 2s ease-in-out infinite;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info div {
+    flex: 1;
+    padding: 20px;
+    background-color: #67a9e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info div:hover {
+    transform: scale(1.05);
+}
+
+.contact-label {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-value {
+    font-size: 16px;
+    color: #fff;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChangeContact {
+    0% { background-color: #4d7aa4; }
+    25% { background-color: #43688f; }
+    50% { background-color: #3b5c7a; }
+    75% { background-color: #4d7aa4; }
+    100% { background-color: #4d7aa4; }
+}
+
+section#contact {
+    animation: backgroundChangeContact 20s infinite;
+}
+
+@keyframes popUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/*   styles for the enhanced home section */
+section#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4d7aa4, #43688f);
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChangeHome {
+    0% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+    25% { background: linear-gradient(to right, #43688f, #3b5c7a); }
+    50% { background: linear-gradient(to right, #3b5c7a, #43688f); }
+    75% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+    100% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+}
+
+section#home {
+    animation: backgroundChangeHome 20s infinite;
+}
+
+@keyframes popUpDownHome {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+/*   styles for the enhanced home section */
+section#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4d7aa4, #43688f);
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; /*   a custom font, adjust as needed */
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/*   background color changes while scrolling */
+@keyframes backgroundChangeHome {
+    0% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+    25% { background: linear-gradient(to right, #43688f, #3b5c7a); }
+    50% { background: linear-gradient(to right, #3b5c7a, #43688f); }
+    75% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+    100% { background: linear-gradient(to right, #4d7aa4, #43688f); }
+}
+
+section#home {
+    animation: backgroundChangeHome 20s infinite;
+}
+
+/*   styles for the pop-up effect */
+.pop-up {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: popUpAnimation 1s forwards;
+}
+
+@keyframes popUpAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
